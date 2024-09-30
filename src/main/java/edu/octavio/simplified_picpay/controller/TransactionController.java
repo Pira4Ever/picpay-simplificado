@@ -84,6 +84,9 @@ public record TransactionController(TransactionService service, UserService user
                 .path("/{id}")
                 .buildAndExpand(transaction.getId())
                 .toUri();
-        return ResponseEntity.created(location).body(new TransactionDtoOut(transaction));
+        TransactionDtoOut dtoOut = new TransactionDtoOut(transaction);
+        dtoOut.payee().setBalance(null);
+        dtoOut.payee().setPassword(null);
+        return ResponseEntity.created(location).body(dtoOut);
     }
 }

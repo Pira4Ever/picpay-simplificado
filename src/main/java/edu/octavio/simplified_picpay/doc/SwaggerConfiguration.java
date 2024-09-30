@@ -24,7 +24,7 @@ public class SwaggerConfiguration {
                 .info(new Info().title("Simplified PicPay")
                         .description("A simplified version of PicPay's backend")
                         .version("v1.0")
-                        .license(new License().name("MIT").url("http://springdoc.org"))
+                        .license(new License().name("MIT").url("https://github.com/Pira4Ever/picpay-simplificado/blob/main/LICENSE"))
                         .contact(new Contact().name("Octavio Piratininga").url("https://github.com/Pira4Ever").email("59701790+Pira4Ever@users.noreply.github.com"))
                         .termsOfService("Terms of use: Open Source"));
     }
