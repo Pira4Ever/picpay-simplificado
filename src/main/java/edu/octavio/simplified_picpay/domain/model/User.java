@@ -10,7 +10,7 @@ import lombok.Setter;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name = "tb_users")
+@Table(name = "tb_users", indexes = {@Index(name = "idx_email", columnList = "email")})
 @Getter
 @Setter
 @AllArgsConstructor
@@ -48,5 +48,4 @@ public class User {
                 ", userType=" + userType +
                 '}';
     }
-
 }
