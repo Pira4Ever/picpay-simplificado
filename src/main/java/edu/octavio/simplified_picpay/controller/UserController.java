@@ -19,7 +19,6 @@ import java.net.URI;
 import java.util.List;
 import java.util.Objects;
 
-@CrossOrigin
 @RestController
 @RequestMapping("/user")
 @Tag(name = "Users controller", description = "RESTful API for managing users.")

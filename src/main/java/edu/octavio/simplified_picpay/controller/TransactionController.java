@@ -20,7 +20,6 @@ import java.net.URI;
 import java.util.List;
 import java.util.Objects;
 
-@CrossOrigin
 @RestController
 @RequestMapping("/transaction")
 @Tag(name = "Transactions controller", description = "RESTful API for managing transactions.")
