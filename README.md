@@ -280,5 +280,7 @@ After starting the app, you can access it using http://localhost:8080
 	"createdAt": "2024-09-30T09:56:03.883737"
 }
 ```
+### OPENAPI
+All endpoints were documented with OpenAPI 3.0: https://picpay-simplificado-production.up.railway.app/swagger-ui/index.html
 ## License
 Simplified PicPay is [MIT licensed](./LICENSE)
