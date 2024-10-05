@@ -106,7 +106,7 @@ public class UserServiceImpl implements UserService {
 
             int sum = 0;
 
-            for (int i = 0; i < 12; i++) { // nicaio
+            for (int i = 0; i < 12; i++) {
                 sum += (document.charAt(i) - 48) * multipliers1[i];
             }
 
