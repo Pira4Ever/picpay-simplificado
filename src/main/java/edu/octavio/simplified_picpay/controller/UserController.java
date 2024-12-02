@@ -117,7 +117,7 @@ public record UserController(UserService service, PasswordEncoder passwordEncode
         return ResponseEntity.ok(new UserDto(service.update(id, userDto.toModel())));
     }
 
-    @Operation(summary = "Update user", description = "Update the user data", security = @SecurityRequirement(name = "bearerAuth"))
+    @Operation(summary = "Delete user", description = "Delete user with specified id", security = @SecurityRequirement(name = "bearerAuth"))
     @ApiResponses(value = {
             @ApiResponse(responseCode = "204", description = "Deleted successfully"),
             @ApiResponse(responseCode = "403", description = "Unauthorized"),
